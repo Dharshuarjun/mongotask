@@ -1,0 +1,356 @@
+db.task.insertMany([
+    {
+        name:"user1",
+        email:"user1.gmail.com",
+        phoneno:7894561235,
+        address:"chennai"
+    },
+    {
+         name:"user2",
+        email:"user2.gmail.com",
+        phoneno:9894568547,
+        address:"mumbai"
+
+    },
+    {
+         name:"user3",
+        email:"user3.gmail.com",
+        phoneno:9975241301,
+        address:"kolkatta"
+    },
+    {
+         name:"user4",
+        email:"user4.gmail.com",
+        phoneno:8892562315,
+        address:"delhi"
+    },
+    {
+         name:"user5",
+        email:"user5.gmail.com",
+        phoneno:9865421381,
+        address:"hyderabad"
+    }
+    ])      //inserts five documents inside task collection
+
+                ObjectId("633fc3a5416787095ae0bfba"),
+                ObjectId("633fc3a5416787095ae0bfbb"),
+                ObjectId("633fc3a5416787095ae0bfbc"),
+                ObjectId("633fc3a5416787095ae0bfbd"),
+                ObjectId("633fc3a5416787095ae0bfbe")
+
+ db.codekata.insertMany([
+    {
+        _id:ObjectId("633fc3a5416787095ae0bfba"),
+        no_of_problems_completed:15
+    },
+    {
+        _id:ObjectId("633fc3a5416787095ae0bfbb"),
+        no_of_problems_completed:25
+    },
+    {
+        _id:ObjectId("633fc3a5416787095ae0bfbc"),
+        no_of_problems_completed:100
+    },
+    {
+        _id:ObjectId("633fc3a5416787095ae0bfbd"),
+        no_of_problems_completed:200
+    },
+    {
+        _id:ObjectId("633fc3a5416787095ae0bfbe")
+        no_of_problems_completed:300
+    }
+ ])               
+
+db.attendance.insertMany([
+    {
+       _id:ObjectId("633fc3a5416787095ae0bfba"),
+       present_days:["15-oct-2020","16-oct-2020","17-oct-2020","18-oct-2020","19-oct-2020","20-oct-2020","21-oct-2020","22-oct-2020","23-oct-2020","24-oct-2020","25-oct-2020","26-oct-2020","27-oct-2020","28-oct-2020","29-oct-2020","30-oct-2020","31-oct-2020"],
+       attendance:"70%"
+    },
+    {
+        _id:ObjectId("633fc3a5416787095ae0bfbb"),
+        present_days:["15-oct-2020","17-oct-2020","18-oct-2020","19-oct-2020","20-oct-2020","21-oct-2020","22-oct-2020","23-oct-2020","24-oct-2020","25-oct-2020","26-oct-2020","27-oct-2020","28-oct-2020","29-oct-2020","30-oct-2020","31-oct-2020"],
+        attendance:"90%"
+
+    },
+    {
+        _id:ObjectId("633fc3a5416787095ae0bfbc"),
+        present_days:["15-oct-2020","17-oct-2020","18-oct-2020","19-oct-2020","20-oct-2020","21-oct-2020","22-oct-2020","23-oct-2020","24-oct-2020","27-oct-2020","28-oct-2020","29-oct-2020","30-oct-2020","31-oct-2020"],
+        attendance:"100%"
+
+    },
+    {
+      _id:ObjectId("633fc3a5416787095ae0bfbd"),
+       present_days:["15-oct-2020","16-oct-2020","17-oct-2020","18-oct-2020","19-oct-2020","20-oct-2020","21-oct-2020","22-oct-2020","23-oct-2020","24-oct-2020","25-oct-2020","26-oct-2020","27-oct-2020","28-oct-2020","29-oct-2020","30-oct-2020","31-oct-2020"],
+       attendance:"60%"
+  
+    },
+    {
+       _id:ObjectId("633fc3a5416787095ae0bfbe"),
+         present_days:["15-oct-2020","16-oct-2020","17-oct-2020","18-oct-2020","19-oct-2020","20-oct-2020","21-oct-2020","22-oct-2020","23-oct-2020","24-oct-2020","25-oct-2020","26-oct-2020","27-oct-2020","28-oct-2020"],
+         attendance:60%"
+  
+    }
+])
+
+db.topics.insertMany([
+    {
+        topic_name:"state management",
+        present_students:[ ObjectId("633fc3a5416787095ae0bfba"),ObjectId("633fc3a5416787095ae0bfbb"),ObjectId("633fc3a5416787095ae0bfbc")],
+        absent_students:[ ObjectId("633fc3a5416787095ae0bfbd"),ObjectId("633fc3a5416787095ae0bfbe")],
+        date: new ISODate("2020-09-20T14:10:30Z")
+    },
+     {
+        topic_name:"useState",
+        present_students:[ ObjectId("633fc3a5416787095ae0bfbc"),ObjectId("633fc3a5416787095ae0bfbd"),ObjectId("633fc3a5416787095ae0bfbe")],
+        absent_students:[ ObjectId("633fc3a5416787095ae0bfba"),ObjectId("633fc3a5416787095ae0bfbb")],
+        date: new ISODate("2020-09-11T14:10:30Z")
+    },
+     {
+        topic_name:"useEffect",
+        present_students:[ ObjectId("633fc3a5416787095ae0bfbd")],
+        absent_students:[ ObjectId("633fc3a5416787095ae0bfba"),ObjectId("633fc3a5416787095ae0bfbb"),ObjectId("633fc3a5416787095ae0bfbc"),ObjectId("633fc3a5416787095ae0bfbe")],
+        date: new ISODate("2020-09-12T14:10:30Z")
+    },
+    {
+        topic_name:"useContext",
+        present_students:[ ObjectId("633fc3a5416787095ae0bfbb"),ObjectId("633fc3a5416787095ae0bfbd")],
+        absent_students:[ ObjectId("633fc3a5416787095ae0bfba"),ObjectId("633fc3a5416787095ae0bfbc"),ObjectId("633fc3a5416787095ae0bfbe")],
+        date: new ISODate("2020-09-15T14:10:30Z")
+    },
+     {
+        topic_name:"useParams",
+        present_students:[ ObjectId("633fc3a5416787095ae0bfba"),ObjectId("633fc3a5416787095ae0bfbc"),ObjectId("633fc3a5416787095ae0bfbe")],
+        absent_students:[ ObjectId("633fc3a5416787095ae0bfbb"),ObjectId("633fc3a5416787095ae0bfbd")],
+        date: new ISODate("2020-09-18T14:10:30Z")
+    },
+    ])
+
+    db.tasks.insertMany([
+        {
+            topic:"state management",
+            task_name:"to-do task",
+            completed_students:[ObjectId("633fc3a5416787095ae0bfba"),ObjectId("633fc3a5416787095ae0bfbb")],
+            not_completed_students:[ObjectId("633fc3a5416787095ae0bfbc"),ObjectId("633fc3a5416787095ae0bfbd"),ObjectId("633fc3a5416787095ae0bfbe")]
+        },
+        {
+            topic:"Admin portal",
+            task_name:"Create a admin dashboard",
+            completed_students:[ObjectId("633fc3a5416787095ae0bfbc"),ObjectId("633fc3a5416787095ae0bfbd"),ObjectId("633fc3a5416787095ae0bfbe")]
+            not_completed_students:[ObjectId("633fc3a5416787095ae0bfba"),ObjectId("633fc3a5416787095ae0bfbb")]    
+        },
+        {
+            topic:"UseState",
+            task_name:"Use formik for formik validations",
+            completed_students:[ObjectId("633fc3a5416787095ae0bfbd")]
+            not_completed_students:[ObjectId("633fc3a5416787095ae0bfba"),ObjectId("633fc3a5416787095ae0bfbb"),ObjectId("633fc3a5416787095ae0bfbc"),ObjectId("633fc3a5416787095ae0bfbe")]  
+        },
+        {
+            topic:"Router",
+            task_name:"Use Router path to create SPA",
+            completed_students:[ ObjectId("633fc3a5416787095ae0bfbb"),ObjectId("633fc3a5416787095ae0bfbd")],
+            not_completed_students:[ObjectId("633fc3a5416787095ae0bfba"),ObjectId("633fc3a5416787095ae0bfbc"),ObjectId("633fc3a5416787095ae0bfbe")]     
+        }
+         {
+            topic:"Express js",
+            task_name:"Nodejs hall booking",
+            completed_students:[ ObjectId("633fc3a5416787095ae0bfba"),ObjectId("633fc3a5416787095ae0bfbc"),ObjectId("633fc3a5416787095ae0bfbe")],
+            not_completed_students:[ ObjectId("633fc3a5416787095ae0bfbb"),ObjectId("633fc3a5416787095ae0bfbd")]     
+        }
+
+    ])
+
+    db.company_drives.insertMany([
+        {
+            name:"HCL",
+            attended_students:[ ObjectId("633fc3a5416787095ae0bfba"),ObjectId("633fc3a5416787095ae0bfbb")],
+            date: new ISODate("2020-10-15T14:10:30Z")
+        },
+        {
+             name:"INFOSYS",
+            attended_students:[ObjectId("633fc3a5416787095ae0bfbd")]
+            date: new ISODate("2020-10-18T14:10:30Z")
+        },
+        {
+            name:"ZOHO",
+            attended_students:[ObjectId("633fc3a5416787095ae0bfbb"),ObjectId("633fc3a5416787095ae0bfbd")],
+            date: new ISODate("2020-10-20T14:10:30Z")
+        },
+        {
+           name:"TCS",
+            attended_students:[ObjectId("633fc3a5416787095ae0bfbd"),ObjectId("633fc3a5416787095ae0bfbe")],
+            date: new ISODate("2020-10-30T14:10:30Z") 
+        }
+    ])
+
+    db.mentors.insertMany([
+        {
+            name:"mentor1",
+            class_strength:45
+        },
+        {
+             name:"mentor2",
+            class_strength:33
+        },
+        {
+             name:"mentor3",
+            class_strength:35
+        },
+        {
+             name:"mentor4",
+            class_strength:40
+        },
+        {
+             name:"mentor5",
+            class_strength:48
+        }
+    ])
+
+
+    1.Find all the topics and tasks which are thought in the month of October
+
+    db.topics.aggregate([
+        {
+            "$lookup":{
+                "from":"tasks",
+                "localField:"topic_name",
+                "foreignField:"topic",
+                "as":"result"
+            }
+        },
+        {
+            "$match":{
+                "date":{
+                    "$gt":new Date('Thu, 12 Oct 2020 14:10:30 GMT')
+                }
+            }
+        },{
+            "$match":{
+                "date":{
+                    "$lt":new Date('Thu, 22 Oct 2020 14:10:30 GMT')
+                }
+            }
+        }
+    ])
+
+    2.Find all the company drives which appeared between 15 oct-2020 and 31-oct-2020
+
+    db.company_drives.aggregate([
+        {
+             "$match":{
+                "date":{
+                    "$gt":new Date('Thu, 01 Oct 2020 14:10:30 GMT')
+                }
+            }
+        },
+        {
+          "$match":{
+                "date":{
+                    "$gt":new Date('Thu, 31 Oct 2020 14:10:30 GMT')
+                }
+               }   
+        }
+    ])
+
+
+    3.Find all the company drives and students who are appeared for the placement
+
+    db.company_drives.aggregate([
+  {
+    '$lookup': {
+      'from': 'users', 
+      'localField': 'attended_students', 
+      'foreignField': '_id', 
+      'as': 'result'
+    }
+  }
+])
+
+4.Find the number of problems solved by the user in codekata
+
+db.codekata.aggregate([
+  {
+    '$lookup': {
+      'from': 'users', 
+      'localField': '_id', 
+      'foreignField': '_id', 
+      'as': 'result'
+    }
+  }, {
+    '$unwind': {
+      'path': '$result'
+    }
+  }, {
+    '$project': {
+      'result': 1, 
+      '_id': 0, 
+      'no_of_problems_completed': 1
+    }
+  }
+])
+
+
+5.Find all the mentors with who has the mentee's count more than 15
+
+db.mentors.find({class_strength: {$gt:15}})
+
+
+6.Find the number of users who are absent and task is not submitted  between 15 oct-2020 and 31-oct-2020
+
+db.topics.aggregate([
+  {
+    '$lookup': {
+      'from': 'tasks', 
+      'localField': 'topic_name', 
+      'foreignField': 'topic', 
+      'as': 'task_status'
+    }
+  }, {
+    '$match': {
+      'date': {
+        '$gt': new Date('Thu, 01 Oct 2020 14:10:30 GMT')
+      }
+    }
+  }, {
+    '$match': {
+      'date': {
+        '$lt': new Date('Thu, 15 Oct 2020 14:10:30 GMT')
+      }
+    }
+  }, {
+    '$unwind': {
+      'path': '$task_status'
+    }
+  }, {
+    '$project': {
+      'total_absentees': {
+        '$size': '$absent_students'
+      }, 
+      'task_incomplete_students': {
+        '$size': '$task_status.not_completed_students'
+      }
+    }
+  }
+])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
